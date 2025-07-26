@@ -15,7 +15,7 @@
     <script>
       function onTelegramAuth(user) {
         window.ReactNativeWebView.postMessage(JSON.stringify(user));
-        window.location.href = `myapp://auth/telegram?data=${token}`;
+        window.location.href = `myapp://auth/telegram?data=${JSON.stringify(user)}`;
       }
     </script>
   </body>
